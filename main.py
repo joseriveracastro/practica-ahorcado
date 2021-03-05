@@ -8,8 +8,6 @@ palabra_con_espacios = []
 for char in palabra:
   palabra_con_espacios.append(char)
 
-print(palabra_con_espacios)
-
 letras_usadas = [] 
 
 while fallos < 7:
@@ -65,7 +63,7 @@ while fallos < 7:
 
   if tu_letra in letras_usadas:
     print('Esa letra ya la colocaste...')
-    print('Entra aqui')
+ 
   else:
     letras_usadas.append(tu_letra)
     hay_error = True
@@ -75,9 +73,6 @@ while fallos < 7:
             hay_error = False
     if hay_error:
        fallos += 1
-    print('Entramos aqui')
-    print(palabra_con_espacios)
-    print(adivinar)
     if palabra_con_espacios == adivinar:
        print(''.join(adivinar))
        print('Ganaste')
